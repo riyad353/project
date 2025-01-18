@@ -240,6 +240,10 @@ section {
   #experience-badge {
     margin: 20px auto;
   }
+  .footer {
+    padding: 0px 5px;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .teams,
@@ -270,5 +274,9 @@ section {
   }
   .our-features {
     margin: 50px auto;
+  }
+  .footer {
+    padding: 20px 1px;
+    text-align: center;
   }
 }
