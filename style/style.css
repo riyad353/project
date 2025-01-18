@@ -125,7 +125,6 @@ section {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
-  text-align: left;
 }
 .facts-container {
   display: grid;
@@ -173,11 +172,52 @@ section {
 .Sponspor-companies img {
   filter: grayscale(100%);
 }
+#features-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 21px;
+}
+.features {
+  display: flex;
+  gap: 100px;
+}
+.feature-card {
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.feature-card .feature-title {
+  font-family: Work Sans;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#experience-badge {
+  padding: 45px 42px;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year {
+  font-size: 65px;
+  font-weight: 700;
+}
+.features-architect img {
+  width: 100%;
+}
+.footer {
+  margin-top: 130px;
+  border-radius: 8px;
+  padding: 20px 410px;
+  background: rgb(255, 244, 231);
+}
 /* responsiv */
 @media screen and (max-width: 576px) {
   .container,
   .content,
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .team-img-cont,
@@ -197,13 +237,20 @@ section {
     justify-items: center;
     gap: 50px;
   }
+  #experience-badge {
+    margin: 20px auto;
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .features {
     flex-direction: column;
   }
   .cont1 {
     margin: 20px;
+  }
+  #experience-badge {
+    margin: 20px auto;
   }
   .team-img-cont,
   .facts-container,
